@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import {google, androidpublisher_v3} from 'googleapis'
+import * as core from '@actions/core';
 
 import {Compute} from 'google-auth-library/build/src/auth/computeclient'
 import {JWT} from 'google-auth-library/build/src/auth/jwtclient'
