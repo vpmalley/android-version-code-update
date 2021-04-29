@@ -48,7 +48,7 @@ async function run(): Promise<void> {
       auth: authClient,
       applicationId: packageName
     })
-    await UpdateVersionCode(versionCode)
+    await UpdateVersionCode(versionCode + 1)
   } catch (error) {
     core.debug(error)
     core.setFailed(error.message)
