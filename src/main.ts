@@ -48,6 +48,7 @@ async function run(): Promise<void> {
       auth: authClient,
       applicationId: packageName
     })
+    core.info(`Latest version used on the Play store is ${versionCode}`)
     await UpdateVersionCode(versionCode + 1)
   } catch (error) {
     core.debug(error)
