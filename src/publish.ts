@@ -32,6 +32,7 @@ export async function fetchVersionCode(options: Options): Promise<Number> {
   const versionCodes: number[] = []
   tracks.data.tracks?.forEach(track => {
     track.releases?.forEach(release => {
+      core.info(`Fetched version code ${release.versionCodes![0]}`)
       versionCodes.push(Number(release.versionCodes![0]))
     })
   })
